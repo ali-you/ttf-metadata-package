@@ -16,7 +16,6 @@ You can get ttf metadata like:
 - descent
 - lineGap
 - unicode and etc.
-- 
 
 
 ## Getting started
