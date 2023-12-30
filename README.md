@@ -1,39 +1,45 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# ttf metadata
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+ttf metadata is a package to get metadata and properties of .ttf and .otf files.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+You can get ttf metadata like:
+
+- fontName
+- xMin
+- yMin
+- xMax
+- yMax
+- ascent
+- descent
+- lineGap
+- unicode and etc.
+- 
+
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To start using the ttf_metadata package, follow these steps:
+
+1. Add the package to your `pubspec.yaml` file:
+```
+ttf_metadata: ^0.0.1
+```
+
+2. Import the package in your Dart code:
+
+dart import 'package:ttf_metadata/ttf_metadata.dart';
+
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+TtfMetadata ttfMetadata = TtfMetadata(TtfFileSource(path: "path to file"));
 ```
 
-## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## License
+
+This package is released under the MIT License. See the [LICENSE](https://github.com/ali-you/ttf_metadata_package/blob/main/LICENSE) file for more details.

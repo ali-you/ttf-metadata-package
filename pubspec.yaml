@@ -1,7 +1,10 @@
 name: ttf_metadata
-description: A new Flutter project.
+description: ttf file metadata
 version: 0.0.1
-homepage:
+homepage: https://github.com/ali-you
+repository: https://github.com/ali-you/ttf_metadata_package
+documentation: https://github.com/ali-you/ttf_metadata_package
+issue_tracker: https://github.com/ali-you/ttf_metadata_package/issues
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
