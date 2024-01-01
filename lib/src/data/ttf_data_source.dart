@@ -14,7 +14,7 @@ import 'ttf_source.dart';
 class TtfDataSource implements TtfSource {
   final Uint8List byteData;
 
-  TtfDataSource({required this.byteData}){
+  TtfDataSource({required this.byteData}) {
     _ttfParser = TtfParser(byteData.buffer.asByteData());
   }
 

@@ -27,5 +27,4 @@ class TtfAssetSource extends TtfSource {
     ByteData assetData = await rootBundle.load(path);
     _ttfParser = TtfParser(assetData);
   }
-
 }

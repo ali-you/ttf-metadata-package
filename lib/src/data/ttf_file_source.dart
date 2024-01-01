@@ -14,7 +14,7 @@ import 'ttf_source.dart';
 class TtfFileSource implements TtfSource {
   final String path;
 
-  TtfFileSource({required this.path}){
+  TtfFileSource({required this.path}) {
     File ttfFile = File(path);
     _ttfParser = TtfParser(ttfFile.readAsBytesSync().buffer.asByteData());
   }
