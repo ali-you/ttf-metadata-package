@@ -24,7 +24,7 @@ To start using the ttf_metadata package, follow these steps:
 
 1. Add the package to your `pubspec.yaml` file:
 ```
-ttf_metadata: ^0.0.1
+ttf_metadata: ^0.0.2
 ```
 
 2. Import the package in your Dart code:
