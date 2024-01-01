@@ -41,4 +41,4 @@ TtfMetadata ttfMetadata = TtfMetadata(TtfFileSource(path: "path to file"));
 
 ## License
 
-This package is released under the MIT License. See the [LICENSE](https://github.com/ali-you/ttf_metadata_package/blob/main/LICENSE) file for more details.
+This package is released under the MIT License. See the [LICENSE](https://github.com/ali-you/ttf-metadata-package/blob/main/LICENSE) file for more details.
