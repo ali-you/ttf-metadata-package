@@ -1,12 +1,9 @@
-import 'dart:io';
-
-import '../data/ttf_file_source.dart';
 import '../data/ttf_source.dart';
 import 'ttf_parser.dart';
 
 class TtfMetadata {
   TtfMetadata(this._ttfSource) {
-    _sourceSelector(_ttfSource);
+    _ttfParser = _ttfSource.ttfParser;
   }
 
   final TtfSource _ttfSource;
@@ -41,16 +38,16 @@ class TtfMetadata {
 
   bool get isBitmap => _ttfParser.isBitmap;
 
-  void _sourceSelector(TtfSource source) {
-    switch (source.runtimeType) {
-      case TtfFileSource:
-        TtfFileSource ttfFileSource = _ttfSource as TtfFileSource;
-        File ttfFile = File(ttfFileSource.path);
-        _ttfParser = TtfParser(ttfFile.readAsBytesSync().buffer.asByteData());
-        break;
-
-      default:
-        throw const FormatException();
-    }
-  }
+  // void _sourceSelector(TtfSource source) {
+  //   switch (source.runtimeType) {
+  //     case TtfFileSource:
+  //       TtfFileSource ttfFileSource = _ttfSource as TtfFileSource;
+  //       File ttfFile = File(ttfFileSource.path);
+  //       _ttfParser = TtfParser(ttfFile.readAsBytesSync().buffer.asByteData());
+  //       break;
+  //
+  //     default:
+  //       throw const FormatException();
+  //   }
+  // }
 }
