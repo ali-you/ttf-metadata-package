@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 /// Describe dimensions for glyphs in a font
 class FontMetrics {
+
   /// Create a PdfFontMetrics object
   const FontMetrics({
     required this.left,
@@ -26,14 +27,23 @@ class FontMetrics {
       return FontMetrics.zero;
     }
 
+    /// left font metrics
     double? left;
+    /// top font metrics
     double? top;
+    /// right font metrics
     var right = 0.0;
+    /// bottom font metrics
     double? bottom;
+    /// ascent font metrics
     double? ascent;
+    /// descent font metrics
     double? descent;
+    /// lastBearing font metrics
     late double lastBearing;
+    /// firstBearing font metrics
     double? firstBearing;
+    /// spacing font metrics
     late double spacing;
 
     for (final metric in metrics) {
@@ -109,6 +119,7 @@ class FontMetrics {
   /// Ending point
   double get rightBearing => advanceWidth - right;
 
+  /// toString function to print property of this class
   @override
   String toString() =>
       'FontMetrics(left:$left, top:$top, right:$right, bottom:$bottom, ascent:$ascent, descent:$descent, advanceWidth:$advanceWidth, leftBearing:$leftBearing, rightBearing:$rightBearing)';

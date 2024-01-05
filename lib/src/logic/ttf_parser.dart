@@ -7,7 +7,10 @@ import 'ttf_bitmap.dart';
 import 'ttf_header.dart';
 import 'utils.dart';
 
+/// TtfParser class to parse ttf or otf file and get property of file
 class TtfParser {
+
+  /// Create a TtfParser object
   TtfParser(this.bytes) {
     final numTables = bytes.getUint16(4);
 
@@ -44,51 +47,73 @@ class TtfParser {
     }
   }
 
+  /// bytes of font file
   final ByteData bytes;
+  /// offsets of font file table
   final tableOffsets = <String, int>{};
+  /// size of font file table
   final tableSize = <String, int>{};
 
+  /// character to glyph index map of font file
   final charToGlyphIndexMap = <int, int>{};
+  /// glyph offsets array of font file
   final glyphOffsets = <int>[];
+  /// glyph size array of font file
   final glyphSizes = <int>[];
+  /// glyph information map of font file
   final glyphInfoMap = <int, FontMetrics>{};
+  /// bitmap offsets map of font file
   final bitmapOffsets = <int, TtfBitmap>{};
 
+  /// unitsPerEm of font file
   int get unitsPerEm =>
       bytes.getUint16(tableOffsets[TtfHeader.headTable]! + 18);
 
+  /// xMin of font file
   int get xMin => bytes.getInt16(tableOffsets[TtfHeader.headTable]! + 36);
 
+  /// yMin of font file
   int get yMin => bytes.getInt16(tableOffsets[TtfHeader.headTable]! + 38);
 
+  /// xMax of font file
   int get xMax => bytes.getInt16(tableOffsets[TtfHeader.headTable]! + 40);
 
+  /// yMax of font file
   int get yMax => bytes.getInt16(tableOffsets[TtfHeader.headTable]! + 42);
 
+  /// indexToLocFormat of font file
   int get indexToLocFormat =>
       bytes.getInt16(tableOffsets[TtfHeader.headTable]! + 50);
 
+  /// ascent of font file
   int get ascent => bytes.getInt16(tableOffsets[TtfHeader.hheaTable]! + 4);
 
+  /// descent of font file
   int get descent => bytes.getInt16(tableOffsets[TtfHeader.hheaTable]! + 6);
 
+  /// lineGap of font file
   int get lineGap => bytes.getInt16(tableOffsets[TtfHeader.hheaTable]! + 8);
 
+  /// numOfLongHorMetrics of font file
   int get numOfLongHorMetrics =>
       bytes.getUint16(tableOffsets[TtfHeader.hheaTable]! + 34);
 
+  /// numGlyphs of font file
   int get numGlyphs => bytes.getUint16(tableOffsets[TtfHeader.maxpTable]! + 4);
 
+  /// fontName of font file
   String get fontName =>
       _getNameID(TtfName.postScriptName) ?? hashCode.toString();
 
+  /// unicode of font file
   bool get unicode => bytes.getUint32(0) == 0x10000;
 
+  /// isBitmap of font file
   bool get isBitmap => bitmapOffsets.isNotEmpty && glyphOffsets.isEmpty;
 
   Utils utils = Utils();
 
-  // https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6name.html
+  /// https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6name.html
   String? _getNameID(TtfName fontNameID) {
     final basePosition = tableOffsets[TtfHeader.nameTable];
     if (basePosition == null) {
