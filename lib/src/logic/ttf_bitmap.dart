@@ -2,7 +2,6 @@ import 'dart:typed_data';
 
 /// Bitmap class for font file
 class TtfBitmap {
-
   /// Create a TtfBitmap object
   const TtfBitmap(
     this.data,
@@ -20,24 +19,34 @@ class TtfBitmap {
 
   /// Uint8List of ttf or otf file
   final Uint8List data;
+
   /// height of font file
   final int height;
+
   /// width of font file
   final int width;
+
   /// horizontalBearingX of font file
   final int horizontalBearingX;
+
   /// horizontalBearingY of font file
   final int horizontalBearingY;
+
   /// horizontalAdvance of font file
   final int horizontalAdvance;
+
   /// verticalBearingX of font file
   final int verticalBearingX;
+
   /// verticalBearingY of font file
   final int verticalBearingY;
+
   /// verticalAdvance of font file
   final int verticalAdvance;
+
   /// ascent of font file
   final int ascent;
+
   /// descent of font file
   final int descent;
 

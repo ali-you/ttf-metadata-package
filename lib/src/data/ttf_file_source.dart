@@ -17,6 +17,7 @@ class TtfFileSource implements TtfSource {
   TtfFileSource({required this.path}) {
     /// get file of this path
     File ttfFile = File(path);
+
     /// set ttfParser and convert file data (Uint8List) to byte data
     _ttfParser = TtfParser(ttfFile.readAsBytesSync().buffer.asByteData());
   }

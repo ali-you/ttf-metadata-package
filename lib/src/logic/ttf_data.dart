@@ -7,7 +7,6 @@ import 'ttf_parser.dart';
 /// TtfMetadata ttfMetadata = TtfMetadata(TtfFileSource(path: "path to file"));
 /// ```
 class TtfMetadata {
-
   /// Create a TtfMetadata object
   TtfMetadata(this._ttfSource) {
     _ttfParser = _ttfSource.ttfParser;

@@ -9,7 +9,6 @@ import 'utils.dart';
 
 /// TtfParser class to parse ttf or otf file and get property of file
 class TtfParser {
-
   /// Create a TtfParser object
   TtfParser(this.bytes) {
     final numTables = bytes.getUint16(4);
@@ -49,19 +48,25 @@ class TtfParser {
 
   /// bytes of font file
   final ByteData bytes;
+
   /// offsets of font file table
   final tableOffsets = <String, int>{};
+
   /// size of font file table
   final tableSize = <String, int>{};
 
   /// character to glyph index map of font file
   final charToGlyphIndexMap = <int, int>{};
+
   /// glyph offsets array of font file
   final glyphOffsets = <int>[];
+
   /// glyph size array of font file
   final glyphSizes = <int>[];
+
   /// glyph information map of font file
   final glyphInfoMap = <int, FontMetrics>{};
+
   /// bitmap offsets map of font file
   final bitmapOffsets = <int, TtfBitmap>{};
 
@@ -431,6 +436,7 @@ class TtfParser {
   }
 }
 
+/// TtfName enum
 enum TtfName {
   copyright,
   fontFamily,
