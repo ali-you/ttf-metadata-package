@@ -1,6 +1,6 @@
 name: ttf_metadata
 description: ttf_metadata is a library to get useful metadata of .ttf and .otf files in your Dart and Flutter apps.
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/ali-you
 repository: https://github.com/ali-you/ttf-metadata-package
 documentation: https://github.com/ali-you/ttf-metadata-package
