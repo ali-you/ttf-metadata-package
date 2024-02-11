@@ -59,4 +59,21 @@ class TtfMetadata {
 
   /// isBitmap of font file
   bool get isBitmap => _ttfParser.isBitmap;
+
+  @override
+  String toString() {
+    return 'Font name: ${_ttfParser.fontName}'
+        '\nFont ascent: ${_ttfParser.ascent}'
+        '\nFont descent: ${_ttfParser.descent}'
+        '\nFont xMin: ${_ttfParser.xMin}'
+        '\nFont xMax: ${_ttfParser.xMax}'
+        '\nFont yMin: ${_ttfParser.yMin}'
+        '\nFont yMax: ${_ttfParser.yMax}'
+        '\nFont lineGap: ${_ttfParser.lineGap}'
+        '\nFont unitsPerEm: ${_ttfParser.unitsPerEm}'
+        '\nFont indexToLocFormat: ${_ttfParser.indexToLocFormat}'
+        '\nFont numOfLongHorMetrics: ${_ttfParser.numOfLongHorMetrics}'
+        '\nFont numGlyphs: ${_ttfParser.numGlyphs}'
+        '\nFont unicode: ${_ttfParser.unicode}';
+  }
 }
