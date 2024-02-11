@@ -1,3 +1,3 @@
-## 0.0.3
+## 0.0.5
 
-* Input methods completed
+* toString Method added, example changed
