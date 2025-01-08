@@ -1,3 +1,5 @@
+# ttf metadata package
+
 <a href="https://pub.dev/packages/ttf_metadata">
    <img src="https://img.shields.io/pub/v/ttf_metadata?label=pub.dev&labelColor=333940&logo=dart">
 </a>
@@ -19,8 +21,6 @@
 <a href="https://github.com/ali-you/ttf-metadata-package">
    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ali-you/ttf-metadata-package">
 </a>
-
-# ttf metadata
 
 ttf metadata is a package to get metadata and properties of .ttf and .otf files.
 
