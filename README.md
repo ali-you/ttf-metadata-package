@@ -1,8 +1,7 @@
-<p align="center">
-  <a href="https://pub.dev/packages/ttf_metadata">
-    <img src="https://img.shields.io/pub/v/ttf_metadata?label=pub.dev&labelColor=333940&logo=dart">
-  </a>
-</p>
+
+<a href="https://pub.dev/packages/ttf_metadata">
+   <img src="https://img.shields.io/pub/v/ttf_metadata?label=pub.dev&labelColor=333940&logo=dart">
+</a>
 
 # ttf metadata
 
