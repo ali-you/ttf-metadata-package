@@ -4,8 +4,14 @@
 <a href="https://github.com/ali-you/ttf-metadata-package/issues">
    <img alt="Issues" src="https://img.shields.io/github/issues/ali-you/ttf-metadata-package?color=0088ff" />
 </a>
+<a href="https://github.com/ali-you/ttf-metadata-package/issues?q=is%3Aclosed">
+   <img alt="Issues" src="https://img.shields.io/github/issues-closed/ali-you/ttf-metadata-package?color=0088ff" />
+</a>
+<!-- <a href="https://github.com/ali-you/ambient-light-plugin/pulls">
+   <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ali-you/ambient-light-plugin?color=0088ff" />
+</a> -->
 <a href="https://github.com/ali-you/ttf-metadata-package/pulls">
-   <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ali-you/ttf-metadata-package?color=0088ff" />
+   <img alt="GitHub Pull Requests" src="https://badgen.net/github/prs/ali-you/ttf-metadata-package" />
 </a>
 <a href="https://github.com/ali-you/ttf-metadata-package/blob/main/LICENSE" rel="ugc">
    <img src="https://img.shields.io/github/license/ali-you/ttf-metadata-package?color=#007A88&amp;labelColor=333940;" alt="GitHub">
