@@ -1,6 +1,14 @@
-
 <a href="https://pub.dev/packages/ttf_metadata">
    <img src="https://img.shields.io/pub/v/ttf_metadata?label=pub.dev&labelColor=333940&logo=dart">
+</a>
+<a href="https://github.com/ali-you/ttf-metadata-package/issues">
+   <img alt="Issues" src="https://img.shields.io/github/issues/ali-you/ttf-metadata-package?color=0088ff" />
+</a>
+<a href="https://github.com/ali-you/ttf-metadata-package/pulls">
+   <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/ali-you/ttf-metadata-package?color=0088ff" />
+</a>
+<a href="https://github.com/ali-you/ttf-metadata-package">
+   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/ali-you/ttf-metadata-package">
 </a>
 
 # ttf metadata
