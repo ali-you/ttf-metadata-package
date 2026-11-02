@@ -110,6 +110,9 @@ class TtfParser {
   String get fontName =>
       _getNameID(TtfName.postScriptName) ?? hashCode.toString();
 
+  String get fontFamily =>
+      _getNameID(TtfName.fontFamily) ?? hashCode.toString();
+
   /// unicode of font file
   bool get unicode => bytes.getUint32(0) == 0x10000;
 
