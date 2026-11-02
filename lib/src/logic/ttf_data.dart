@@ -54,6 +54,9 @@ class TtfMetadata {
   /// fontName of font file
   String get fontName => _ttfParser.fontName;
 
+  /// fontFamily of font file
+  String get fontFamily => _ttfParser.fontFamily;
+
   /// unicode of font file
   bool get unicode => _ttfParser.unicode;
 
